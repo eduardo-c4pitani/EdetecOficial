@@ -1,0 +1,48 @@
+$shadow: rgba(217, 217, 217, 0.22);
+$white-color: #ffffff;
+$hover-color: #9b9b9b;
+
+.information-section {
+  background-color: transparent;
+
+}
+
+.information-section__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  height: 60vh;
+}
+
+.information-section__content {
+  display: flex;
+  border-radius: 10px;
+  font-weight:lighter;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  margin-inline: auto;
+
+  :where(.information-section__content--title, .information-section__content--anchor) {
+    color: $white-color;
+  }
+}
+
+
+.information-section__content--anchor {
+  background-color: transparent;
+  border: 1px solid $white-color;
+  border-radius: 5px;
+  width: 10em;
+  padding: 5px;
+  font-size: 1.2em;
+  color: $white-color;
+
+  &:hover {
+    cursor: pointer;
+    color: $hover-color !important;
+    border: 1px solid $hover-color;
+  }
+}

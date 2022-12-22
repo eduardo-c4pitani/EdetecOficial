@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+$inter-font: "Inter", sans-serif;
+$montserrat-font: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $montserrat-font;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+  :visited {
+    color: beige;
+  }
+}
+
+img {
+  object-fit: cover;
+}
